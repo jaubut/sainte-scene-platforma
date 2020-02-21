@@ -9,7 +9,7 @@ import {
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '../assets/css/blueprint.css'
+import '../assets/css/light.css'
 
 import _6f6c098b from '../layouts/default.vue'
 

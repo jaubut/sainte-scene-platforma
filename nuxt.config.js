@@ -31,7 +31,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/blueprint.css'
+    '@/assets/css/light.css'
   ],
   /*
   ** Plugins to load before mounting the App

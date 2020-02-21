@@ -1,6 +1,6 @@
 <template>
   <div>
-    <menu1></menu1>
+    <menu2></menu2>
     <cover1></cover1>
     <center1></center1>
     <right7></right7>
