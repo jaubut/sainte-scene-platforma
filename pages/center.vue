@@ -1,24 +1,27 @@
 <template>
   <div>
-    <center1></center1>
-    <center2></center2>
-    <center3></center3>
-    <center4></center4>
-    <center5></center5>
-    <center6></center6>
-    <center7></center7>
-    <center8></center8>
-    <center9></center9>
-    <center10></center10>
-    <center11></center11>
-    <center12></center12>
-    <center13></center13>
-    <center14></center14>
-    <center15></center15>
-    <center16></center16>
-    <center17></center17>
-    <center18></center18>
-    <center19></center19>
+    <texts1></texts1>
+    <texts2></texts2>
+    <texts3></texts3>
+    <texts4></texts4>
+    <texts5></texts5>
+    <texts6></texts6>
+    <texts7></texts7>
+    <texts8></texts8>
+    <texts9></texts9>
+    <texts10></texts10>
+    <texts11></texts11>
+    <texts12></texts12>
+    <texts13></texts13>
+    <texts14></texts14>
+    <texts15></texts15>
+    <texts16></texts16>
+    <texts17></texts17>
+    <texts18></texts18>
+    <texts19></texts19>
+    <texts20></texts20>
+    <texts21></texts21>
+    <texts22></texts22>
   </div>
 </template>
 

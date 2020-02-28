@@ -3,8 +3,8 @@
     <div class="py-5">
       <div class="row justify-content-center text-center py-3">
         <div class="col-12 col-md-8">
-          <h4>Tagline</h4>
-          <h1 class="display-4">Long headline to turn your visitors into users</h1><a class="action-link" href=""><span>Action link</span></a>
+          <h4>{{ tagline }}</h4>
+          <h1 class="display-4">{{ headline }}</h1><a class="action-link" :href="link1"><span>{{ linktitle }}</span></a>
         </div>
       </div>
     </div>
@@ -15,6 +15,7 @@
 export default {
   name: 'center-1',
   components: {
-  }
+  },
+  props: ['tagline', 'headline', 'link1', 'linktitle']
 }
 </script>

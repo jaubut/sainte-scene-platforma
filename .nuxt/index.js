@@ -11,10 +11,11 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_0f4fa2be from 'nuxt_plugin_workbox_0f4fa2be' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_17ad74ba from 'nuxt_plugin_nuxticons_17ad74ba' // Source: ./nuxt-icons.js (mode: 'all')
-import nuxt_plugin_axios_447b5276 from 'nuxt_plugin_axios_447b5276' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_workbox_cb5ee552 from 'nuxt_plugin_workbox_cb5ee552' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_nuxticons_cb8239a6 from 'nuxt_plugin_nuxticons_cb8239a6' // Source: ./nuxt-icons.js (mode: 'all')
+import nuxt_plugin_axios_008eeafb from 'nuxt_plugin_axios_008eeafb' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_global_90a6a800 from 'nuxt_plugin_global_90a6a800' // Source: ../plugins/global.js (mode: 'all')
+import nuxt_plugin_vueinstagram_5bc1e040 from 'nuxt_plugin_vueinstagram_5bc1e040' // Source: ../plugins/vue-instagram.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -43,7 +44,7 @@ Vue.component(Nuxt.name, Nuxt)
 
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
 async function createApp (ssrContext) {
   const router = await createRouter(ssrContext)
@@ -148,20 +149,24 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_0f4fa2be === 'function') {
-    await nuxt_plugin_workbox_0f4fa2be(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_cb5ee552 === 'function') {
+    await nuxt_plugin_workbox_cb5ee552(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_nuxticons_17ad74ba === 'function') {
-    await nuxt_plugin_nuxticons_17ad74ba(app.context, inject)
+  if (typeof nuxt_plugin_nuxticons_cb8239a6 === 'function') {
+    await nuxt_plugin_nuxticons_cb8239a6(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_447b5276 === 'function') {
-    await nuxt_plugin_axios_447b5276(app.context, inject)
+  if (typeof nuxt_plugin_axios_008eeafb === 'function') {
+    await nuxt_plugin_axios_008eeafb(app.context, inject)
   }
 
   if (typeof nuxt_plugin_global_90a6a800 === 'function') {
     await nuxt_plugin_global_90a6a800(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_vueinstagram_5bc1e040 === 'function') {
+    await nuxt_plugin_vueinstagram_5bc1e040(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
