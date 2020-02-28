@@ -2,11 +2,11 @@
   <div>
     <menu1></menu1>
     <cover1
-    :headline="cover.fields.headline"
+    :headline="cover.fields.text1"
     :image="cover.fields.image.fields.file.url"
-    :text="cover.fields.text"
-    :link1="cover.fields.link1"
-    :textlink1="cover.fields.linkTitle1"
+    :text="cover.fields.text1"
+    :link1="cover.fields.facebookLink"
+    :textlink1="cover.fields.facebookLink"
     ></cover1>
     <center1
     :tagline="center.fields.tagline"
@@ -48,6 +48,7 @@ import VueInstagram from 'vue-instagram'
 const client = createClient()
 
 export default {
+  name: 'page index',
   components: {
     VueInstagram
   },
